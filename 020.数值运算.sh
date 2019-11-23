@@ -3,3 +3,6 @@ a=100
 b=200
 let c=a*b
 echo $c
+
+c=$[ a+b ]
+echo $c
