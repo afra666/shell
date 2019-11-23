@@ -6,3 +6,7 @@ echo $c
 
 c=$[ a+b ]
 echo $c
+
+
+c=$((a+b))
+echo $c
