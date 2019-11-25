@@ -1,3 +1,4 @@
+//jar必须跟.c文件在同一个目录
 //U3Application.java
 package p;
 
