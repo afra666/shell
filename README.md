@@ -2,6 +2,7 @@
 
 ##  运行方式
 ```
+sh a.sh
 /bin/bash a.sh
 ```
 
