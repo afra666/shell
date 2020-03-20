@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#在windows idea下三种写法都可以正常读取txt文件，但是路径不能有空格
+#oriPath='D:\\oriHello.txt'
+#oriPath='D:\oriHello.txt'
+#oriPath='D:/oriHello.txt'
+oriPath='D:\\oriHello.txt'
+finalOriPath='D:\\oriHello2.txt'
+cat -n $oriPath >$finalOriPath
