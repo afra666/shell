@@ -1,0 +1,87 @@
+oriPath='D:\\oriHello.txt'
+finalOriPath='D:\\oriHello3.txt'
+##cat $oriPath | tr -d "printf||;" > $finalOriPath
+
+#cat $oriPath | awk -v FS="(print|;|return)" '{print $2}' > $finalOriPath
+
+#cat ${oriPath} | grep 'prins' > ${finalOriPath}
+
+#cat ${oriPath} | sed s/[[:space:]|[:punct:]]/\n/g >${finalOriPath}
+
+#cat ${oriPath} >${finalOriPath}
+#替换换行-双换行-删除标点-空格转换行
+sed -e 's/printf/printf\n/g' \
+ -e 's/Hello/\nHello\n/g'  \
+ -e 's/[[:punct:]]//g' \
+  -e 's/ /\n/g' \
+ ${oriPath}
+ 
+ 
+ 
+ 
+ windows idea输出：
+ "C:\Program Files\Git\bin\bash.exe" "D:\Program Files\idea-code\0320\a3\src\main\java\p\aa.sh"
+
+
+Function
+main
+null
+
+enabled
+by
+treeoriginal
+
+12
+
+
+
+printf
+
+const
+char
+
+restrict
+
+Hello
+
+World
+
+
+return
+0
+
+return
+0
+
+Function
+main
+null
+
+enabled
+by
+treeoriginal
+
+6
+251981981
+
+
+
+printf
+
+const
+char
+
+restrict
+
+Hello
+
+World
+
+
+return
+0
+
+return
+0
+
+Process finished with exit code 0
